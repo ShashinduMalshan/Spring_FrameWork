@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/04.Full_SpringBean_vs_Light_Spring_Bean/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04.Full_SpringBean_vs_Light_Spring_Bean/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05.Configaration/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/05.Configaration/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06.RunTime_value_Injection/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/06.RunTime_value_Injection/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07._Spring_Env/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/07._Spring_Env/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_Spring_Web_MVC/REST_Controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_Spring_Web_MVC/REST_Controller/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_Spring_Web_MVC/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/08_Spring_Web_MVC/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09.REST_Controller/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/09.REST_Controller/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

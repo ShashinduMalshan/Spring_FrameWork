@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/01.Spring_Core/pom.xml" />
+        <option value="$PROJECT_DIR$/02.SpringBean_LifeCycle/pom.xml" />
+        <option value="$PROJECT_DIR$/03.DI_WithSpring/pom.xml" />
+        <option value="$PROJECT_DIR$/Full_modul_vs_Light_modul/pom.xml" />
+        <option value="$PROJECT_DIR$/04.Full_SpringBean_vs_Light_Spring_Bean/pom.xml" />
+        <option value="$PROJECT_DIR$/05.Configaration/pom.xml" />
+        <option value="$PROJECT_DIR$/RunTime_value_Injection/pom.xml" />
+        <option value="$PROJECT_DIR$/07._Spring_Env/pom.xml" />
+        <option value="$PROJECT_DIR$/08_Spring_Web_MVC/pom.xml" />
+        <option value="$PROJECT_DIR$/09.REST_Controller/pom.xml" />
+        <option value="$PROJECT_DIR$/10.Front_End/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/08_Spring_Web_MVC/REST_Controller/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" project-jdk-name="corretto-21 (2)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
