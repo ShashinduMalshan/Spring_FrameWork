@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -15,15 +14,17 @@
         <option value="$PROJECT_DIR$/08_Spring_Web_MVC/pom.xml" />
         <option value="$PROJECT_DIR$/09.REST_Controller/pom.xml" />
         <option value="$PROJECT_DIR$/10.Front_End/pom.xml" />
+        <option value="$PROJECT_DIR$/11.Back_End/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/08_Spring_Web_MVC/REST_Controller/pom.xml" />
+        <option value="$PROJECT_DIR$/10.Front_End/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" project-jdk-name="corretto-21 (2)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" project-jdk-name="corretto-21 (3)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
