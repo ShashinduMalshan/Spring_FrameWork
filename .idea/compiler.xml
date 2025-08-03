@@ -14,6 +14,7 @@
         <module name="03.DI_WithSpring" />
         <module name="01.Spring_Core" />
         <module name="Back_End" />
+        <module name="O13_Auth_Back_End_Security" />
         <module name="05.Configaration" />
       </profile>
     </annotationProcessing>
@@ -27,6 +28,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Back_End" options="-parameters" />
+      <module name="O13_Auth_Back_End_Security" options="-parameters" />
     </option>
   </component>
 </project>

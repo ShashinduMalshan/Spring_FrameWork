@@ -1,0 +1,36 @@
+
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.dashboard-container {
+    padding: 30px;
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.01);
+}
+.welcome-msg {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.stats-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.small-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
