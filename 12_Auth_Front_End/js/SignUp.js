@@ -1,32 +1,46 @@
+$(document).ready(function () {
+    $("#signUpBtn").on("click", function () {
+        const username = $("#username").val().trim();
+        const password = $("#password").val().trim();
+        const role = $("#role").val();
 
-    document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector("form");
-    const emailInput = document.getElementById("email");
-    const usernameInput = document.getElementById("username");
-    const passwordInput = document.getElementById("password");
+        // 🔎 Debug logs
+        console.log("Username:", username);
+        console.log("Password:", password);
+        console.log("Role:", role);
 
-    form.addEventListener("submit", function (event) {
-    event.preventDefault(); // prevent form from submitting normally
+        // Basic validation
+        if (!username || !password || !role) {
+            alert("All fields are required!");
+            return;
+        }
 
-    const email = emailInput.value.trim();
-    const username = usernameInput.value.trim();
-    const password = passwordInput.value.trim();
+        const requestData = {
+            username: username,
+            password: password,
+            role: role
+        };
 
-    // Basic validation
-    if (!email || !username || !password) {
-    alert("All fields are required!");
-    return;
-}
-
-    // If all fields are filled, you can send data to backend here
-    console.log("Email:", email);
-    console.log("Username:", username);
-    console.log("Password:", password);
-
-    alert("Sign In successful! (Test only)");
-
-    // Optionally reset form
-    // form.reset();
+        $.ajax({
+            url: "http://localhost:8080/auth/register",
+            method: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(requestData),
+            success: function (response) {
+                console.log("Registration successful:", response);
+                alert("Sign Up successful!");
+                // Optionally redirect:
+                window.location.href = "../Pages/SingIn.html";
+            },
+            error: function (xhr) {
+                console.error("Registration failed:", xhr.responseText);
+                try {
+                    const err = JSON.parse(xhr.responseText);
+                    alert(err.message || "Sign Up failed. Please try again.");
+                } catch {
+                    alert("Sign Up failed. Please try again.");
+                }
+            }
+        });
+    });
 });
-});
-

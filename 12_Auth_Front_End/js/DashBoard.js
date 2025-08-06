@@ -1,11 +1,27 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Dashboard loaded for user: Sandaru");
 
-    const logoutBtn = document.querySelector("button.btn-outline-primary");
-    logoutBtn.addEventListener("click", function () {
+
+
+$(document).ready(function () {
+const token = localStorage.getItem("token");
+
+  if (!token) {
+      alert("Please login first!");
+      window.location.href = "../Pages/SingIn.html";
+
+  }else {
+      loadDashBord();
+  }
+
+
+})
+function loadDashBord() {
+    console.log("Dashboard loaded for user: Shasidu");
+
+    $("button.btn-outline-primary").on("click", function () {
         const confirmLogout = confirm("Are you sure you want to logout?");
         if (confirmLogout) {
-            window.location.href = "SignIn.html"; // or your login page
+            localStorage.removeItem("token"); // Clear token on logout
+            window.location.href = "../Pages/SingIn.html";
         }
     });
-});
+}

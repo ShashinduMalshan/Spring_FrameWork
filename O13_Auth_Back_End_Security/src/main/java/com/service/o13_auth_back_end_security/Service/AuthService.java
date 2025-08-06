@@ -19,17 +19,19 @@ public class AuthService {
     private final PasswordEncoder passwordEncoder;
     private final JwtUtil jwtUtil;
 
-    public AuthResponseDto authenticate(AuthDto authDTO){
-
-        User user = userRepository.findByUsername(authDTO.getUsername()).orElseThrow(()->new RuntimeException("User not found"));
-
-        if (!passwordEncoder.matches(authDTO.getPassword(),user.getPassword())){
+   public AuthResponseDto authenticate(AuthDto authDTO){
+        // validate credentials
+        User user = userRepository.findByUsername(authDTO.getUsername())
+                .orElseThrow(() -> new RuntimeException("User not found"));
+        // check password
+        if (!passwordEncoder.matches(authDTO.getPassword(), user.getPassword())){
             throw new BadCredentialsException("Invalid credentials");
         }
-
-        String token = jwtUtil.generateToken(authDTO.username);
+        // generate token with username and role
+        String token = jwtUtil.generateToken(authDTO.getUsername(), user.getRole().name());
         return new AuthResponseDto(token);
     }
+
 
     public String register(RegisterDto registerDto){
         if (userRepository.findByUsername(registerDto.getUsername()).isPresent()){
@@ -44,6 +46,8 @@ public class AuthService {
         userRepository.save(user);
         return "User registered successfully";
     }
+
+
 
 
 

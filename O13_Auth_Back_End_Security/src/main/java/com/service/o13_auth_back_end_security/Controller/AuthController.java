@@ -9,11 +9,12 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.concurrent.ThreadPoolExecutor;
 
 @RestController
 @RequestMapping("/auth")
 @RequiredArgsConstructor
+@CrossOrigin("*")  // allow frontend origin
+
 public class AuthController {
 
     private final AuthService authService;
