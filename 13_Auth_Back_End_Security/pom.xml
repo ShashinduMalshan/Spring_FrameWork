@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.service</groupId>
-    <artifactId>O13_Auth_Back_End_Security</artifactId>
+    <artifactId>13_Auth_Back_End_Security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>O13_Auth_Back_End_Security</name>
     <description>O13_Auth_Back_End_Security</description>
